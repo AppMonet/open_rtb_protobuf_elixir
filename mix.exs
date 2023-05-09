@@ -8,7 +8,7 @@ defmodule OpenRtbProtobuf.MixProject do
   def project do
     [
       app: :open_rtb_protobuf,
-      version: "0.1.0",
+      version: "0.1.1",
       elixir: "~> 1.10",
       description: "OpenRTB Protobuf support for Elixir",
       start_permanent: Mix.env() == :prod,
@@ -29,7 +29,9 @@ defmodule OpenRtbProtobuf.MixProject do
   def package do
     [
       licenses: ["MIT"],
-      links: %{"GitHub" => @repo_url}
+      links: %{"GitHub" => @repo_url},
+      files: ~w(lib priv .formatter.exs mix.exs README* readme* LICENSE*
+                license* CHANGELOG* changelog* src protobuf)
     ]
   end
 
