@@ -43,7 +43,8 @@ defmodule OpenRtbProtobuf.MixProject do
 
   defp deps do
     [
-      {:protox, "~> 1.7"}
+      {:protox, "~> 1.7"},
+      {:ex_doc, "~> 0.27", only: :dev, runtime: false}
     ]
   end
 end
