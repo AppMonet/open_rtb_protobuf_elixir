@@ -30,8 +30,7 @@ defmodule OpenRtbProtobuf.MixProject do
     [
       licenses: ["MIT"],
       links: %{"GitHub" => @repo_url},
-      files: ~w(lib priv .formatter.exs mix.exs README* readme* LICENSE*
-                license* CHANGELOG* changelog* src protobuf)
+      files: ~w(lib .formatter.exs mix.exs README* protobuf)
     ]
   end
 
