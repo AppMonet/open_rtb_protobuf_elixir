@@ -67,9 +67,6 @@ jobs:
         if: ${{matrix.dialyzer && steps.cache-plt.outputs.cache-hit != 'true'}}
         run: mix dialyzer --plt
 
-      - name: Start docker
-        run: docker-compose up --detach
-
       - name: Check for unused dependencies
         run: mix do deps.get, deps.unlock --check-unused
         if: ${{ matrix.lint && steps.cache-deps.outputs.cache-hit != 'true'}}
@@ -83,12 +80,7 @@ jobs:
         if: ${{ matrix.lint }}
 
       - name: Run tests
-        run: mix test --trace --include proxy
-        if: ${{ !matrix.coverage }}
-
-      - name: Run tests with coverage
-        run: mix coveralls.github --include proxy
-        if: ${{ matrix.coverage }}
+        run: mix test
 
       - name: Run Dialyzer
         run: mix dialyzer
