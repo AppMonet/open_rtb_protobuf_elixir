@@ -1,6 +1,6 @@
 # OpenRtbProtobuf
 
-**TODO: Add description**
+OpenRTB v2.6 Protobuf support for Elixir.
 
 ## Installation
 
@@ -18,4 +18,3 @@ end
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at <https://hexdocs.pm/open_rtb_protobuf>.
-
