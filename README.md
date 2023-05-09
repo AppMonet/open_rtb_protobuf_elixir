@@ -1,4 +1,5 @@
 # OpenRtbProtobuf
+[![Build Status](https://github.com/AppMonet/open_rtb_protobuf_elixir/workflows/CI/badge.svg?branch=main)](https://github.com/AppMonet/open_rtb_protobuf_elixir/actions) [![Hex pm](https://img.shields.io/hexpm/v/open_rtb_protobuf.svg?style=flat)](https://hex.pm/packages/open_rtb_protobuf) [![Hexdocs.pm](https://img.shields.io/badge/hex-docs-lightgreen.svg)](https://hexdocs.pm/open_rtb_protobuf/)
 
 OpenRTB v2.6 Protobuf support for Elixir.
 
